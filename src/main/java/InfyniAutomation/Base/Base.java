@@ -1,6 +1,7 @@
 package InfyniAutomation.Base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -42,6 +43,12 @@ public class Base {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(seconds));
 
     }
+
+    public static void scrollDown() throws InterruptedException {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+    }
+
     @AfterSuite
     public static void closeBrowser() {
         driver.close();

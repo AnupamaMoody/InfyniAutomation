@@ -7,7 +7,7 @@ import org.testng.annotations.*;
 @Test
 public class LoginTestCase extends LoginPageObjects {
 
-        @Test(groups = "smoke")
+        @Test(groups = "smoke",priority = 1)
         @Parameters({"EmailId", "Password"})
         public static void VerfiyUserLogin(String arg1, String arg2) {
             // TODO Auto-generated method stub

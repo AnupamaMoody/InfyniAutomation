@@ -5,21 +5,21 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 @Test
-public class AboutUsTestCase extends FooterPageObjects {
+public class NewsTestCase extends FooterPageObjects {
 
-    @Test(groups = "smoke",priority = 2)
-    public static void VerfiyAboutUsPage() throws InterruptedException {
+    @Test(groups = "smoke",priority = 3)
+    public static void VerfiyNewsPage() throws InterruptedException {
         // TODO Auto-generated method stub
 
         implicitTime(5);
         clickHome();
         scrollDown();
-        clickAboutUs();
-        String actualText = captureAboutUsText();
-        String expectedText ="About Us";
+        clickNewsLink();
+        String actualText = captureNewsText();
+        String expectedText ="News";
 
         Assert.assertEquals(actualText, expectedText);
-        System.out.println("About Link Test case passed");
+        System.out.println("News Test case passed");
 
         driver.navigate().back();
         System.out.println("Back to Main page");
@@ -27,4 +27,3 @@ public class AboutUsTestCase extends FooterPageObjects {
     }
 
 }
-
