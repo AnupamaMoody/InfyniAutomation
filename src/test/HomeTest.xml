@@ -16,6 +16,20 @@
             </class>
             <class name ="InfyniAutomation.TestCase.TermsConditionsTestCase">
             </class>
+            <class name ="InfyniAutomation.TestCase.OtherFooterTestCase">
+            </class>
+            <class name ="InfyniAutomation.TestCase.TrendingTestCase">
+            </class>
+            <class name ="InfyniAutomation.TestCase.MostPopularTestCase">
+            </class>
+            <class name ="InfyniAutomation.TestCase.MostRecentTestCase">
+            </class>
+            <class name ="InfyniAutomation.TestCase.ProfessionalTestCase">
+            </class>
+            <class name ="InfyniAutomation.TestCase.KidsTestCase">
+            </class>
+            <class name ="InfyniAutomation.TestCase.LiveCourseTestCase">
+            </class>
         </classes>
     </test>
 </suite>
